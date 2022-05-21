@@ -1,7 +1,4 @@
-li:hover {
-  background-color: aqua;
-}
-.hd {
+.book {
   display: flex;
   justify-content: center;
 }

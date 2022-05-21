@@ -1,0 +1,12 @@
+<h1 class="hd">Latest News</h1>
+
+<div class="card text-center" *ngFor="let story of stories | async">
+  <div class="card-body">
+    <h2 class="card-title">{{ story.title }}</h2>
+    <footer class="blockquote-footer">
+      Published {{ story.byline }} on {{ story.created_date }}
+    </footer>
+    <p class="card-text">{{ story.abstract }}</p>
+    <a href="{{ story.url }}" class="btn btn-primary">READ MORE...</a>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<h1 class="book">Books</h1>
+<div class="card" *ngFor="let book of books | async">
+  <div class="card-body">
+    <h2 class="card-title">{{ book.title }}</h2>
+    <h6 class="card-subtitle mb-2 text-muted">
+      Publisher : {{ book.publisher }}<br />
+      Author : {{ book.author }}
+    </h6>
+    <p class="card-text">{{ book.description }}</p>
+  </div>
+</div>
